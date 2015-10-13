@@ -26,15 +26,23 @@ Agile Methodology: TDD;
 
 ##Controller Mappings (application root context: http://localhost:8080/RGACustomerModel/ ):
 
-"{[/customer/updateCustomer],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.updateCustomer(com.rga.customer.entities.Customer,javax.servlet.http.HttpServletResponse)
-"{[/customer/getAllCustomers],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.getAllCustomers(javax.servlet.http.HttpServletResponse)
-"{[/customer/deleteCustomer/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.deleteCustomer(java.lang.Long,javax.servlet.http.HttpServletResponse)
-"{[/customer/addCustomer],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.addCustomer(com.rga.customer.entities.Customer,javax.servlet.http.HttpServletResponse)
-"{[/customer/getCustomerById/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.getCustomerById(java.lang.Long,javax.servlet.http.HttpServletResponse)
-"{[/customer/addCustomer],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rga.customer.controllers.CustomerController.addCustomerModel(javax.servlet.http.HttpServletResponse)
-"{[/customer/updateCustomer/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rga.customer.controllers.CustomerController.updateCustomerModel(java.lang.Long,javax.servlet.http.HttpServletResponse)
-"{[/user/registerUser],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rga.customer.controllers.UserController.addUserModel(javax.servlet.http.HttpServletResponse)
-"{[/user/registerUser],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.UserController.registerUser(com.rga.customer.entities.User,javax.servlet.http.HttpServletResponse)
+- "{[/customer/updateCustomer],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.updateCustomer(com.rga.customer.entities.Customer,javax.servlet.http.HttpServletResponse)
+
+- "{[/customer/getAllCustomers],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.getAllCustomers(javax.servlet.http.HttpServletResponse)
+
+- "{[/customer/deleteCustomer/{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.deleteCustomer(java.lang.Long,javax.servlet.http.HttpServletResponse)
+
+- "{[/customer/addCustomer],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.addCustomer(com.rga.customer.entities.Customer,javax.servlet.http.HttpServletResponse)
+
+- "{[/customer/getCustomerById/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.CustomerController.getCustomerById(java.lang.Long,javax.servlet.http.HttpServletResponse)
+
+- "{[/customer/addCustomer],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rga.customer.controllers.CustomerController.addCustomerModel(javax.servlet.http.HttpServletResponse)
+
+- "{[/customer/updateCustomer/{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rga.customer.controllers.CustomerController.updateCustomerModel(java.lang.Long,javax.servlet.http.HttpServletResponse)
+
+- "{[/user/registerUser],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.rga.customer.controllers.UserController.addUserModel(javax.servlet.http.HttpServletResponse)
+
+- "{[/user/registerUser],methods=[POST],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.rga.customer.controllers.UserController.registerUser(com.rga.customer.entities.User,javax.servlet.http.HttpServletResponse)
 
 
 ##Configurations

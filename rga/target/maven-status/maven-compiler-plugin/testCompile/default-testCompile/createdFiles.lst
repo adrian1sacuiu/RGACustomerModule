@@ -1,0 +1,9 @@
+com\rga\customer\services\UsersServiceTest.class
+com\rga\customer\controllers\AuthenticationTest.class
+com\rga\customer\controllers\AuthenticationTest$UsersHelper.class
+com\rga\customer\services\dao\CustomerDaoTest.class
+com\rga\customer\controllers\UserControllerTest.class
+com\rga\customer\services\dao\UserDaoTest.class
+com\rga\customer\controllers\AuthenticationTest$1.class
+com\rga\customer\controllers\CustomerControllerTest.class
+com\rga\customer\services\CustomerServiceTest.class

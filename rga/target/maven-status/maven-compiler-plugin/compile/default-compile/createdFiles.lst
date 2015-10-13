@@ -1,0 +1,12 @@
+com\rga\customer\entities\Customer.class
+com\rga\customer\services\SimpleAuthentication.class
+com\rga\customer\controllers\CustomerController.class
+com\rga\customer\util\RgaUtils.class
+com\rga\customer\services\UsersService.class
+com\rga\customer\controllers\UserController.class
+com\rga\customer\util\RGAConstants.class
+com\rga\customer\services\CustomerService.class
+com\rga\customer\util\SessionController.class
+com\rga\customer\services\dao\CustomerDao.class
+com\rga\customer\entities\User.class
+com\rga\customer\services\dao\UserDao.class

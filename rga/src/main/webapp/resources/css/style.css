@@ -1,0 +1,17 @@
+.red {
+	color: red;
+}
+#customerInfo {
+	margin-top: 40px;
+	padding: 40px;
+	width: 80%;
+}
+#info {
+	margin-top: 40px;
+	padding: 40px;
+}
+
+#errorMessage {
+	padding: 40px;
+	width: 40%;
+}

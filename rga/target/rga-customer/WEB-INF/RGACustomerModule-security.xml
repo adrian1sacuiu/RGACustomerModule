@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.springframework.org/schema/security"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/security 
+							http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<http auto-config="false" use-expressions="true">
+		<access-denied-handler error-page="/views/errors/accessDenied.jsp"/>
+		<remember-me key="customerKey" token-validity-seconds="604800" />
+		<form-login login-page="/views/login.jsp" authentication-failure-url="/views/login.jsp?error=login_error" 
+			default-target-url="/" always-use-default-target="true" />
+		<logout invalidate-session="true" logout-success-url="/" delete-cookies="JSESSIONID" />
+		<intercept-url pattern="/index.jsp" access="permitAll" />
+		<intercept-url pattern="/resources/**" access="permitAll" />
+		<intercept-url pattern="/views/login.jsp" access="isAnonymous()" />
+		<intercept-url pattern="/views/register.jsp" access="isAnonymous()" />
+		<intercept-url pattern="/views/customerPage.jsp" access="isAuthenticated()" />
+	</http>
+
+	<jdbc-user-service id="userService" data-source-ref="dataSource"
+		authorities-by-username-query="select username, 'ROLE_USER' as 'authority' from users where username=?"
+		users-by-username-query="select username, password, 1 from USERS where username=?" />
+
+	<authentication-manager>
+		<authentication-provider user-service-ref="userService">
+			<password-encoder hash="bcrypt" />
+		</authentication-provider>
+	</authentication-manager>
+</beans:beans>
